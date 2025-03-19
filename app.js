@@ -1,6 +1,6 @@
 import express from 'express';
 import {PORT} from './config/env.js';
-import useRouter from './routes/use.routes.js';
+import useRouter from './routes/user.routes.js';
 import trackRouter from './routes/track.routes.js';
 import authRouter from './routes/auth.routes.js';
 import connectDatabase from './database/mongodb.js';
