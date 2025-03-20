@@ -16,7 +16,7 @@ const trackSchema = new mongoose.Schema({
     currency:{
         type:String,
         enum:['USD','EUR','VND'],
-        default: VND,
+        default: 'VND',
     },
     frequency:{
         type:String,
@@ -24,7 +24,7 @@ const trackSchema = new mongoose.Schema({
     },
     category:{
         type:String,
-        enum:['income','expense', 'saving', 'investment', 'debt'],
+        enum:['Entertainment','Film', 'investment', 'debt'],
         required:true,
     },
     paymentMethod:{
